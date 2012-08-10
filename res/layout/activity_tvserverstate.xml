@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011 Benjamin Gmeiner.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Benjamin Gmeiner - Project Owner
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/background">
+	<com.mediaportal.ampdroid.activities.actionbar.ActionBar
+		android:id="@+id/actionbar" style="@style/ActionBar"
+		android:layout_gravity="top" />
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginTop="50dip" android:layout_marginBottom="90dip"
+		android:layout_gravity="top" android:layout_height="fill_parent"
+		android:id="@+id/BottomMarginLayout" android:orientation="vertical"
+		android:gravity="top">
+			<TextView android:id="@+id/TextView01" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/tvserver_title_starttimeshiftrecording"
+				android:layout_gravity="bottom" android:textSize="18dip"
+				android:textStyle="bold" android:layout_marginTop="5dip"
+				android:layout_marginBottom="5dip"></TextView>
+			<LinearLayout android:id="@+id/LinearLayout01"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<Spinner android:layout_height="wrap_content" android:id="@+id/SpinnerGroups"
+					android:layout_width="0dip" android:layout_weight="1"></Spinner>
+				<Spinner android:layout_height="wrap_content" android:id="@+id/SpinnerChannels"
+					android:layout_width="0dip" android:layout_weight="2"></Spinner>
+			</LinearLayout>
+
+			<LinearLayout android:id="@+id/LinearLayout02"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<Button android:layout_height="wrap_content" android:id="@+id/ButtonStartTimeshift"
+					android:text="@string/tvserver_starttimeshift" android:layout_weight="1"
+					android:layout_width="0dip"></Button>
+				<Button android:layout_height="wrap_content" android:id="@+id/ButtonStartRecording"
+					android:text="@string/tvserver_startrecording" android:layout_width="0dip"
+					android:layout_weight="1"></Button>
+			</LinearLayout>
+			<TextView android:id="@+id/TextView02" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/tvserver_activecards"
+				android:layout_marginBottom="5dip" android:layout_marginTop="5dip"
+				android:textSize="18dip" android:textStyle="bold"></TextView>
+			<ListView android:id="@+id/ListViewCards"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:divider="@drawable/list_divider" android:dividerHeight="3px"
+				android:cacheColorHint="#00000000">
+			</ListView>
+	</LinearLayout>
+	<include layout="@layout/include_sliding_drawer" />
+	<include layout="@layout/include_bottom_bar"></include>
+</FrameLayout>

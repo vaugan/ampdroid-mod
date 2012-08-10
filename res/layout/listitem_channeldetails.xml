@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011 Benjamin Gmeiner.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Benjamin Gmeiner - Project Owner
+-->
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:id="@+id/LinearLayoutBackground" android:padding="5dip" android:layout_height="fill_parent">
+<ImageView android:id="@+id/ImageViewLogo" android:visibility="visible" android:layout_marginRight="10dip" android:layout_height="70dip" android:layout_width="70dip"></ImageView>
+<LinearLayout android:id="@+id/linearLayout1" android:layout_height="fill_parent" android:orientation="vertical" android:layout_width="fill_parent">
+    <TextView android:text="[ Title ]" android:gravity="center" android:layout_width="wrap_content" android:textSize="18dip" android:textStyle="bold" android:id="@+id/TextViewChannelName" android:layout_height="wrap_content" android:layout_gravity="left" android:layout_marginLeft="10dip"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/LinearLayoutNow">
+        <TextView android:layout_height="wrap_content" android:layout_width="0dip" android:layout_weight="1" android:id="@+id/TextViewEpgNowLabel" android:text="@string/tvserver_epg_now"></TextView>
+        <TextView android:text="TextView" android:layout_height="wrap_content" android:id="@+id/TextViewEpgNowText" android:layout_width="0dip" android:minLines="1" android:lines="1" android:layout_weight="4"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/LinearLayoutNext">
+        <TextView android:layout_width="0dip" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/TextViewEpgNextLabel" android:text="@string/tvserver_epg_next"></TextView>
+        <TextView android:text="TextView" android:layout_width="0dip" android:layout_height="wrap_content" android:id="@+id/TextViewEpgNextText" android:lines="1" android:maxLines="1" android:layout_weight="4"></TextView>
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011 Benjamin Gmeiner.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Benjamin Gmeiner - Project Owner
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:padding="5dp">
+	<ImageView android:id="@+id/status_icon"
+		android:layout_width="wrap_content" android:layout_height="fill_parent"
+		android:layout_alignParentLeft="true" />
+
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_toRightOf="@id/status_icon">
+
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_alignParentTop="true"
+			android:layout_marginLeft="20dip" android:layout_marginRight="10dip"
+			android:id="@+id/TextViewNotificationFileName" android:text="[Filename]"
+			android:singleLine="true" android:ellipsize="marquee"
+			android:marqueeRepeatLimit="marquee_forever"
+			android:scrollHorizontally="true" android:lines="1"
+			android:layout_marginBottom="10dip" />
+
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/TextViewNotificationOverview"
+			android:layout_below="@+id/TextViewNotificationFileName"
+			android:layout_toRightOf="@+id/FrameLayoutNotificationProgress"
+			android:text="[Files]" android:layout_marginLeft="-40dip"></TextView>
+		<FrameLayout android:layout_marginLeft="20dip"
+			android:id="@+id/FrameLayoutNotificationProgress"
+			android:layout_below="@+id/TextViewNotificationFileName"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginRight="50dip">
+
+			<ProgressBar android:layout_height="fill_parent"
+				android:progressDrawable="@android:drawable/progress_horizontal"
+				android:indeterminate="false" android:indeterminateOnly="false"
+
+				android:scrollbarStyle="insideOverlay" android:id="@+id/ProgressBarNotificationTransferStatus"
+				android:layout_width="fill_parent" />
+			<TextView android:text="@+id/TextView01"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:gravity="center" android:layout_gravity="center"
+				android:id="@+id/TextViewNotificationProgressText"
+				android:textColor="@color/listitem_epg_current"></TextView>
+
+		</FrameLayout>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011 Benjamin Gmeiner.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Benjamin Gmeiner - Project Owner
+-->
+<resources>
+	<color name="actionbar_separator">#000000</color>
+	<color name="actionbar_background_start">#747373</color>
+	<color name="actionbar_background_end">#1b1b1b</color>
+	<color name="actionbar_background_item_pressed_start">#FF7F00</color>
+	<color name="actionbar_background_item_pressed_end">#EE7600</color>
+	<color name="listview_background">#00477D</color>
+	<color name="details_view_header_background">#3B3E40</color>
+	<color name="listitem_epg_current">#FFFFFF</color>
+	<color name="listitem_epg_default">#000000</color>
+	<color name="background_sliding_drawer">#aabbbb</color>
+	<color name="infobar_background">#ECECEC</color>
+	<color name="listitem_disabled">#FF7F00</color>
+</resources>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2011 Benjamin Gmeiner. All rights reserved. This program 
+	and the accompanying materials are made available under the terms of the 
+	GNU Public License v2.0 which accompanies this distribution, and is available 
+	at http://www.gnu.org/licenses/old-licenses/gpl-2.0.html Contributors: Benjamin 
+	Gmeiner - Project Owner -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.mediaportal.ampdroid" android:versionCode="90"
+	android:versionName="0.9.0">
+	<uses-sdk android:minSdkVersion="7" android:targetSdkVersion="7" />
+
+	<supports-screens android:smallScreens="true"
+		android:normalScreens="true" android:largeScreens="true"
+		android:anyDensity="true" />
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:debuggable="true" android:allowClearUserData="true">
+		<activity android:name="com.mediaportal.ampdroid.activities.WelcomeScreenActivity"
+			android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="com.google.ads.AdActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation" />
+
+
+		<activity android:name="com.mediaportal.ampdroid.activities.BaseActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="com.mediaportal.ampdroid.activities.HomeActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="com.mediaportal.ampdroid.activities.MediaActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="com.mediaportal.ampdroid.activities.DownloadsActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabMoviesActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabMoviesActivityGroup"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabMovieDetailsActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabSeriesActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabSeriesActivityGroup"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabSeriesDetailsActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabEpisodesActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabEpisodeDetailsActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabSharesActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabVideosActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabVideoDetailsActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.media.TabVideosActivityGroup"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="com.mediaportal.ampdroid.activities.MusicActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.music.TabAlbumsActivityGroup"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.music.TabAlbumDetailsActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.music.TabAlbumsActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.music.TabTracksActivityGroup"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.music.TabTracksActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.music.TabMusicSharesActivityGroup"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.music.TabMusicDirectoryActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.music.TabMusicSharesActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.music.TabArtistsActivityGroup"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.music.TabArtistsActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="com.mediaportal.ampdroid.activities.PicturesActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.TvServerOverviewActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.tvserver.TvServerStateActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.tvserver.TvServerRecordingsActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.tvserver.TvServerRecordingDetailsActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.tvserver.TvServerSchedulesActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.tvserver.TvServerChannelsActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.tvserver.TvServerChannelDetailsActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.tvserver.TvServerProgramDetailsActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.tvserver.TvServerEpgActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="com.mediaportal.ampdroid.activities.RemoteControlActivity"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+		</activity>
+		<activity android:name="com.mediaportal.ampdroid.activities.StatusBarActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<service android:enabled="true"
+			android:name=".downloadservice.ItemDownloaderService">
+		</service>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.settings.SettingsActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity
+			android:name="com.mediaportal.ampdroid.activities.settings.ClientSettingsActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name="com.quoord.tapatalkpro.activity.ForumNavigationActivity">
+		</activity>
+		<activity android:name=".activities.VideoViewActivity"
+			android:screenOrientation="portrait">
+		</activity>
+		<activity android:name=".activities.videoplayback.VideoStreamingPlayerActivity"
+			android:screenOrientation="landscape"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+		</activity>
+		<activity android:name=".activities.videoplayback.StreamingDetailsActivity"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait">
+		</activity>
+	</application>
+</manifest> 

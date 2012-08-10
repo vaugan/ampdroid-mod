@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2011 Benjamin Gmeiner. All rights reserved. This program 
+	and the accompanying materials are made available under the terms of the 
+	GNU Public License v2.0 which accompanies this distribution, and is available 
+	at http://www.gnu.org/licenses/old-licenses/gpl-2.0.html Contributors: Benjamin 
+	Gmeiner - Project Owner -->
+<resources>
+	<string name="app_name">aMPdroid</string>
+	<string name="app_desc">Control MP from your Android phone</string>
+	<string name="actionbar_activity_not_found">Failed to open intent...</string>
+	<string name="welcome_choose_client">Choose client:</string>
+	<string name="welcome_auto_connect">Connect on startup</string>
+	<string name="welcome_no_client">Please select client...</string>
+	<string name="welcome_connect">Select</string>
+	<string name="welcome_no_clients">No clients defined yet, use the settings screen to
+		add clients</string>
+	<string name="home_wol_confirmation_title">No Connection</string>
+	<string name="home_wol_confirmation_text">No connection to service, wake pc using WOL?
+	</string>
+	<string name="home_wol_running">Sending WOL packets to pc</string>
+	<string name="home_wol_nomac">No connection and cannot send WOL packets unless a
+		MAC address is defined in setting...</string>
+	<string name="downloads_title">aMPdroid Downloads</string>
+	<string name="downloads_delete_file_success">Successfully deleted file</string>
+	<string name="downloads_delete_file_failed">Couldn\'t deleted file</string>
+	<string name="downloads_also_remove_queued_title">Remove Queued</string>
+	<string name="downloads_also_remove_queued_text">Remove items that are currently waiting to be
+		downloaded?</string>
+	<string name="downloads_state_queued">Queued</string>
+	<string name="downloads_state_running">Running</string>
+	<string name="downloads_state_paused">Paused</string>
+	<string name="downloads_state_stopped">Stopped</string>
+	<string name="downloads_state_finished">Finished</string>
+	<string name="downloads_state_failed">Failed</string>
+	<string name="series_actors">Actors</string>
+	<string name="series_seasons">Seasons</string>
+	<string name="series_release">Release Date</string>
+	<string name="series_runtime">Runtime</string>
+	<string name="series_certification">Certification</string>
+	<string name="movie_actors">Actors</string>
+	<string name="movie_release">Release Date</string>
+	<string name="movie_runtime">Runtime</string>
+	<string name="movie_certification">Certification</string>
+	<string name="episode_gueststars">Guest Stars</string>
+	<string name="episode_firstaired">First Aired</string>
+	<string name="episode_rating">Rating</string>
+	<string name="button_prev">Prev</string>
+	<string name="button_next">Next</string>
+	<string name="button_earlier">Earlier</string>
+	<string name="button_later">Later</string>
+	<string name="title_home">MediaPortal for Android</string>
+	<string name="title_tvserver">TvServer</string>
+	<string name="title_tvserver_state">Manual Control</string>
+	<string name="title_tvserver_channels">Channels</string>
+	<string name="title_tvserver_recordings">Recordings</string>
+	<string name="title_tvserver_schedules">Schedules</string>
+	<string name="title_tvserver_epg">Program Guide</string>
+	<string name="title_media">Media Browsing</string>
+	<string name="media_views">Views</string>
+	<string name="media_views_text">Text</string>
+	<string name="media_views_poster">Poster</string>
+	<string name="media_views_thumbs">Thumbs</string>
+	<string name="media_views_banner">Banner</string>
+	<string name="media_tabs_shares">Shares</string>
+	<string name="media_tabs_videos">Videos</string>
+	<string name="media_tabs_movies">Movies</string>
+	<string name="media_tabs_series">Series</string>
+	<string name="media_nofile">No local file available for this item</string>
+	<string name="media_series_loadingerror">Couldn\'t load series</string>
+	<string name="media_series_loadmultiplewarning_title">Downloading multiple episodes!</string>
+	<string name="media_series_loadmultiplewarning_text_begin">Do you really want to download\u0020</string>
+	<string name="media_series_loadmultiplewarning_text_end">\u0020episodes?</string>
+	<string name="media_series_season">Season</string>
+	<string name="media_series_loadseries">Loading Series ...</string>
+	<string name="media_series_loadseriesdetails">Loading Series Details ...</string>
+	<string name="media_series_loadepisodedetails">Loading Episode Details ...</string>
+	<string name="media_episode">Episode</string>
+	<string name="media_episodes">Episodes</string>
+	<string name="media_episodes_loading">Loading Episodes ...</string>
+	<string name="media_episodes_minutes"> minutes</string>
+	<string name="media_shares_loadshares">Loading Video Shares ...</string>
+	<string name="media_shares_loadfiles">Loading Files ...</string>
+	<string name="media_movie_loadingerror">Couldn\'t load movie</string>
+	<string name="media_movie_loadmoviedetails">Loading movie details</string>
+	<string name="media_movies_loading">Loading Movies ...</string>
+	<string name="media_videos_loadingerror">Couldn\'t load video</string>
+	<string name="media_videos_loadvideodetails">Loading Video Details</string>
+	<string name="media_videos_loadvideos">Loading Videos ...</string>
+	<string name="music_tabs_shares">Folders</string>
+	<string name="music_tabs_albums">Albums</string>
+	<string name="music_tabs_artists">Artists</string>
+	<string name="music_tabs_songs">Songs</string>
+	<string name="music_album_details_tracks">Tracks</string>
+	<string name="music_album_details_year">Year</string>
+	<string name="music_album_details_num_track">Tracks</string>
+	<string name="music_album_details_length">Length</string>
+	<string name="music_album_details_year_seperator">\u0020-\u0020</string>
+	<string name="music_share_loadshares">Loading Shares ...</string>
+	<string name="music_share_loaddirectory">Loading Directory ...</string>
+	<string name="music_albums_loadalbums">Loading Albums ...</string>
+	<string name="music_artists_loadartists">Loading Artists ...</string>
+	<string name="music_tracks_loadtracks">Loading Tracks ...</string>
+	<string name="days_yesterday">Yesterday</string>
+	<string name="days_today">Today</string>
+	<string name="days_tomorrow">Tomorrow</string>
+	<string name="state_recording">Recording</string>
+	<string name="state_timeshifting">Timeshifting</string>
+	<string name="state_grabbingEpg">Grabbing EPG</string>
+	<string name="tvserver_manual_title">Manual Control</string>
+	<string name="tvserver_manual_desc">Current state of the tv service and the tv cards.
+	</string>
+	<string name="tvserver_epg_now">Now</string>
+	<string name="tvserver_epg_next">Next</string>
+	<string name="tvserver_epg_title">EPG</string>
+	<string name="tvserver_epg_desc">Electronic Program Guide.</string>
+	<string name="tvserver_channel_title">Channels</string>
+	<string name="tvserver_channel_desc">All available Channels on the server.</string>
+	<string name="tvserver_schedules_title">Schedules</string>
+	<string name="tvserver_schedules_desc">All scheduled recordings on the server.</string>
+	<string name="tvserver_recordings_title">Recordings</string>
+	<string name="tvserver_recordings_desc">All recordings on the server.</string>
+	<string name="tvserver_record_this">All recordings on the server.</string>
+	<string name="tvserver_noconnection_tvserver_title">No connection</string>
+	<string name="tvserver_noconnection_tvserver_desc">Couldn\'t connect to Tv Server</string>
+	<string name="tvserver_starttimeshift_failed">Couldn\'t start timeshift</string>
+	<string name="tvserver_stoptimeshift_failed">Couldn\'t stop timeshift</string>
+	<string name="tvserver_starttimeshift">Start timeshift</string>
+	<string name="tvserver_startrecording">Start recording</string>
+	<string name="tvserver_stoptimeshift">Stop timeshift</string>
+	<string name="tvserver_loadgroups">Loading Groups</string>
+	<string name="tvserver_loadchannels">Loading Channels</string>
+	<string name="tvserver_schedulecanceled">Schedule canceled</string>
+	<string name="tvserver_schedulecancel_failed">Couldn\'t cancel schedule</string>
+	<string name="tvserver_scheduleadded">Schedule added</string>
+	<string name="tvserver_scheduleadd_failed">Couldn\'t add schedule</string>
+	<string name="tvserver_cancel_schedule">Cancel Schedule</string>
+	<string name="tvserver_cancel_recording">Cancel Recording</string>
+	<string name="tvserver_loadschedules">Loading Schedules ...</string>
+	<string name="tvserver_loadrecordings">Loading Recordings ...</string>
+	<string name="tvserver_loadprogramdetails_failed">Couldn\'t load program details</string>
+	<string name="tvserver_loadprogramdetails">Loading Program Details</string>
+	<string name="tvserver_loadepg_finished">Finished loading epg</string>
+	<string name="tvserver_loadepg">Loading Electronic Program Guide</string>
+	<string name="tvserver_errorplaying">Error playing </string>
+	<string name="tvserver_errorplaying_resultcode">, ResultCode: </string>
+	<string name="tvserver_finishedplaying">Finished playing  </string>
+	<string name="tvserver_channel">Channel</string>
+	<string name="tvserver_activecards">Active Cards</string>
+	<string name="tvserver_title_starttimeshiftrecording">Start Timeshift/Recording</string>
+	<string name="tvserver_program_start">Start Time</string>
+	<string name="tvserver_program_end">End Time</string>
+	<string name="tvserver_program_duration">Duration</string>
+	<string name="tvserver_program_desc">Description</string>
+	<string name="remote_menu_morecommands">More Commands</string>
+	<string name="remote_menu_plugins">Plugins</string>
+	<string name="remote_menu_powermodes">Powermodes</string>
+	<string name="remote_logoff">Description</string>
+	<string name="remote_suspend">Suspend</string>
+	<string name="remote_hibernate">Hibernate</string>
+	<string name="remote_reboot">Reboot</string>
+	<string name="remote_shutdown">Shutdown</string>
+	<string name="remote_exit">Exit</string>
+	<string name="slider_remote_controls">Remote Controls</string>
+	<string name="slider_position_label">Position</string>
+	<string name="settings_categories_clients">Clients</string>
+	<string name="settings_category_general">General</string>
+	<string name="settings_category_tvserver">Tv Server</string>
+	<string name="settings_category_media">Media Browsing</string>
+	<string name="settings_general_fullscreen">Fullscreen</string>
+	<string name="settings_general_fullscreen_desc">Hide titlebar. Restart app for changes to take
+		affect)</string>
+	<string name="settings_preference_vibrate_title">Vibrate on Touch</string>
+	<string name="settings_preference_vibrate_desc">Screen vibrates on user interaction</string>
+	<string name="settings_tvserver_showall_title">Show \"All Channel\" Group</string>
+	<string name="settings_tvserver_showall_desc">Show the \"All Channel\" Group which contains all
+		channels of the tv server</string>
+	<string name="settings_general_clientname_title">Client Name</string>
+	<string name="settings_general_clientname_desc">The Name of this client when interacting with the
+		MediaPortal</string>
+	<string name="settings_media_cachemedia_title">Cache information locally</string>
+	<string name="settings_media_cachemedia_desc">Cache media information</string>
+	<string name="settings_media_loaddetails_title">Load details automatically</string>
+	<string name="settings_media_loaddetails_desc">Load details for media items automatically or only
+		when item is selected</string>
+	<string name="settings_media_cachevalid_title">Cache valid</string>
+	<string name="settings_media_cachevalid_desc">Cached items should be refreshed if older then
+	</string>
+	<string name="settings_categories_clients_desc">Edit Clients</string>
+	<string name="settings_clients_newclient_title">Clients</string>
+	<string name="settings_clients_switchadvanced">Switch to Advanced Mode</string>
+	<string name="settings_clients_switchsimple">Switch to Simple Mode</string>
+	<string name="settings_clients_switchsimple_warning_title">Overwrite Settings?</string>
+	<string name="settings_clients_switchsimple_warning_text">You currently have different settings for your
+		clients. If you switch to simple mode these will get overwritten.
+	</string>
+	<string name="settings_clients_newclient_desc">Add, edit, remove clients</string>
+	<string name="settings_general_preloaditems_title">Items to preload</string>
+	<string name="settings_general_preloaditems_desc">Number of items that are loaded when end of list is
+		reached</string>
+	<string name="settings_general_autoconnect_title">Auto-Connect</string>
+	<string name="settings_general_autoconnect_desc">Automatically connect to MediaPortal client on
+		startup</string>
+	<string name="settings_general_autoreconnect_title">Reconnect</string>
+	<string name="settings_general_autoreconnect_desc">Automatically reconnect to MediaPortal client on
+		connection loss</string>
+	<string name="settings_general_autowol_title">WOL on connect</string>
+	<string name="settings_general_autowol_desc">Automatically wake pc on connect</string>
+	<string name="settings_general_statusbar_hide_title">Hide Statusbar</string>
+	<string name="settings_general_statusbar_hide_desc">Auto-hide the statusbar</string>
+	<string name="settings_general_statusbar_hide_dialog_title">Hide Statusbar Mode</string>
+	<string name="settings_clients_noclients">Use menu to add host</string>
+	<string name="settings_clients_clientname">Name of this Instance:</string>
+	<string name="settings_clients_clienthost">Host or IP Address:</string>
+	<string name="settings_clients_clientmac">Mac Address:</string>
+	<string name="settings_clients_clientmac_hint">Use : or - as seperators</string>
+	<string name="settings_clients_clientport">Port:</string>
+	<string name="settings_clients_clientusername">Username:</string>
+	<string name="settings_clients_default">Default:\u0020</string>
+	<string name="settings_clients_clientpassword">Password:</string>
+	<string name="settings_clients_clientuseauth">Use Authentication:</string>
+	<string name="settings_clients_enableservice">Enable Service</string>
+	<string name="settings_clients_gma">GmaWebservice</string>
+	<string name="settings_clients_tv4home">Tv4Home</string>
+	<string name="settings_clients_wifiremote">WifiRemote</string>
+	<string name="settings_delete_client_title">Delete Client?</string>
+	<string name="settings_delete_client_start">Are you sure you want to delete the client \"
+	</string>
+	<string name="settings_delete_client_end">\"?</string>
+	<string name="settings_media_preload_items_title">Preload Items</string>
+	<string name="settings_media_preload_items_desc">How many items should be loaded when the end of a
+		list is reached.</string>
+	<string name="settings_media_defaultview_series_title">Default View Series</string>
+	<string name="settings_media_defaultview_series_desc">Default View for browsing your tv shows</string>
+	<string name="settings_media_defaultview_movies_title">Default View Movies</string>
+	<string name="settings_media_defaultview_movies_desc">Default View for browsing your movies</string>
+	<string name="settings_media_defaultview_videos_title">Default View Videos</string>
+	<string name="settings_media_defaultview_videos_desc">Default View for browsing your videos</string>
+	<string name="settings_media_defaultview_videoshares_title">Default View Video Shares</string>
+	<string name="settings_media_defaultview_videoshares_desc">Default View browsing your video shares</string>
+	<string name="settings_media_defaultview_musicshares_title">Default View Music Shares</string>
+	<string name="settings_media_defaultview_musicshares_desc">Default View browsing your music shares</string>
+	<string name="settings_media_defaultview_musicalbums_title">Default View Music Albums</string>
+	<string name="settings_media_defaultview_musicalbums_desc">Default View browsing your music albums</string>
+	<string name="settings_media_defaultview_musicartists_title">Default View Music Artists</string>
+	<string name="settings_media_defaultview_musicartists_desc">Default View browsing your music artists</string>
+	<string name="settings_media_defaultview_musictracks_title">Default View Music Tracks</string>
+	<string name="settings_media_defaultview_musictracks_desc">Default View browsing your music tracks</string>
+	<string name="settings_streaming_buffering_title">Buffering Mode</string>
+	<string name="settings_streaming_buffering_desc">Select the buffering mode for video playback
+	</string>
+	<string name="settings_streaming_quality_title">Streaming quality</string>
+	<string name="settings_streaming_quality_desc">Select the quality of the video stream. Note that
+		this setting will become invalid if the streaming profiles are changed
+		on the backend.</string>
+	<string name="settings_streaming_useexternal_title">Use external Player</string>
+	<string name="settings_streaming_useexternal_desc">If checked, instead of using the internal
+		MediaPlayer (only available for > 2.3) the stream is started with an
+		installed external player. Only use this if you have problems with the
+		inbuild video player.</string>
+
+	<string name="info_not_implemented">Not implemented yet</string>
+	<string name="info_no_connection">No connection to service</string>
+	<string name="info_remote_notconnected">Remote not connected</string>
+	<string name="info_wrong_username_password">Wrong username or password</string>
+	<string name="info_loading_title">Loading. Please wait ...</string>
+	<string name="info_loading_failed">Loading failed, check your connection</string>
+	<string name="info_file_not_found">File has to be downloaded first</string>
+	<string name="info_file_already_downloaded">File is already downloaded</string>
+	<string name="info_no_groups_defined">No Groups defined on MediaPortal Tv Server</string>
+	<string name="menu_clients">Clients</string>
+	<string name="menu_settings">Settings</string>
+	<string name="menu_refresh">Refresh</string>
+	<string name="menu_addhost">Add host</string>
+	<string name="menu_addhost_scan">QR Scan</string>
+	<string name="menu_connect">Connect Remote</string>
+	<string name="menu_disconnect">Disconnect</string>
+	<string name="menu_set_default_view">Set as Default</string>
+	<string name="menu_clear_downloads">Clear</string>
+	<string name="menu_downloads">Downloads</string>
+	<string name="menu_beam_to_pc">Beam to HTPC</string>
+	<string name="menu_select_stream_quality">Stream Quality</string>
+	<string name="menu_quit_client">Quit Client</string>
+	<string name="remote_menu_keyboard">Keyboard</string>
+	<string name="dialog_ok">Ok</string>
+	<string name="dialog_yes">Yes</string>
+	<string name="dialog_no">No</string>
+	<string name="dialog_cancel">Cancel</string>
+	<string name="dialog_title_addhost">Add new host</string>
+	<string name="quickactions_playclient">Play on PC</string>
+	<string name="quickactions_playdevice">Play locally</string>
+	<string name="quickactions_streamdevice">Stream</string>
+	<string name="quickactions_streamdevice_details">Stream (adv)</string>
+	<string name="quickactions_details">Details</string>
+	<string name="quickactions_downloadsd">Download</string>
+	<string name="quickactions_start">Start</string>
+	<string name="quickactions_stop">Stop</string>
+	<string name="quickactions_record">Record</string>
+	<string name="quickactions_cancel">Cancel</string>
+	<string name="quickactions_delete">Delete</string>
+	<string name="quickactions_remove">Remove</string>
+	<string name="quickactions_redownload">Download Again</string>
+	<string name="connection_successful">Successfully established connection to Remote
+	</string>
+	<string name="connection_failed">Remote Connection couldn\'t be established</string>
+	<string name="connection_closed">Remote Connection closed</string>
+	<string name="settings_host_useauth">Use Authentification</string>
+	<string name="remote_button_info">Info</string>
+	<string name="remote_button_subtitle">Subtitles</string>
+	<string name="remote_button_menu">Menu</string>
+	<string name="notification_download_failed">\u0020failed</string>
+	<string name="notification_download_succeeded">\u0020Download(s) finished</string>
+	<string name="notification_title">aMPdroid</string>
+	<string name="settings_category_streaming">Streaming</string>
+	<string name="streaming_playfromstart_title">Play</string>
+	<string name="streaming_playfromstart_text">Play using profile\u0020</string>
+	<string name="streaming_resumefrompos_title">Resume</string>
+	<string name="streaming_resumefrompos_text">Continue from\u0020</string>
+	<string name="streaming_quality_title">Streaming Quality</string>
+	<string name="streaming_quality_text">Select the video stream quality</string>
+	<string name="streaming_tvserver_use_rtsp_title">Watch RTSP stream</string>
+	<string name="streaming_tvserver_use_rtsp_text">Watch the original RTSP stream of MediaPortal.
+		(Best quality, requires external player)</string>
+	<string name="streaming_remember_settings_title">Remember</string>
+	<string name="streaming_remember_settings_text">Remember these stream settings</string>
+	<string name="streaming_initfailed_title">Couldn\'t start stream</string>
+	<string name="streaming_initfailed_text">Error on starting the tv stream, maybe no free cards are available.</string>
+	<string name="streaming_media_died_title">Stream failed</string>
+	<string name="streaming_media_died_text">Stream stopped unexpectedly, try to restart?</string>
+	<string name="streaming_seeking_available">Seeking available now</string>
+	<string name="streaming_seeking_preparing">Preparing video for seeking</string>
+	<string name="streaming_seeking_preparefailed">Seek preparation failed, seeking not available on this stream!</string>
+</resources>

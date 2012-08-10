@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011 Benjamin Gmeiner.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Benjamin Gmeiner - Project Owner
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_marginTop="5dip" android:layout_height="80dip" android:layout_marginRight="10dip"
+		android:layout_weight="2" android:padding="5dip" android:layout_width="0dip">
+		<ImageView android:scaleType="fitCenter"
+			android:background="@drawable/rounded_image_background"
+			android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ImageViewEventImage" android:padding="5dip" android:minHeight="50dip" android:minWidth="50dip"></ImageView>
+	</LinearLayout>
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:orientation="vertical" android:id="@+id/LinearLayoutWeeklyItemText"
+		android:layout_width="0dip" android:layout_weight="2" android:layout_gravity="center_vertical">
+		<TextView android:text="@+id/TextView01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/TextViewTitle"></TextView>
+		<TextView android:text="@+id/TextView02"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:id="@+id/TextViewText"></TextView>
+	</LinearLayout>
+	<ImageView android:id="@+id/ImageViewArrow"
+		android:background="@drawable/arrow_right_normal"
+		android:layout_width="30dip" android:layout_height="30dip"
+		android:layout_gravity="center_vertical"></ImageView>
+</LinearLayout>

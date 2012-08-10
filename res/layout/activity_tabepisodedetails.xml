@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2011 Benjamin Gmeiner. All rights reserved. This program 
+	and the accompanying materials are made available under the terms of the 
+	GNU Public License v2.0 which accompanies this distribution, and is available 
+	at http://www.gnu.org/licenses/old-licenses/gpl-2.0.html Contributors: Benjamin 
+	Gmeiner - Project Owner -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout android:layout_height="50dip"
+		android:layout_width="fill_parent" android:id="@+id/LinearLayout02"
+		android:background="@drawable/bottom_bar_bg">
+		<TextView android:layout_height="wrap_content" android:text="[ Series Name ]"
+			android:id="@+id/TextViewEpisodeName" android:layout_gravity="center"
+			android:textStyle="bold" android:gravity="center"
+			android:layout_width="fill_parent" android:textSize="20dip"></TextView>
+	</LinearLayout>
+	<ScrollView android:id="@+id/ScrollViewRoot"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:orientation="vertical"
+			android:padding="5dip">
+			<LinearLayout android:layout_height="wrap_content"
+				android:id="@+id/LinearLayoutSeriesHeader" android:layout_width="fill_parent"
+				android:layout_gravity="center" android:gravity="center">
+				<ImageView android:scaleType="fitCenter"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:id="@+id/ImageViewEpisodeBanner" android:background="@drawable/rounded_image_background"
+					android:minHeight="100dip" android:minWidth="200dip"
+					android:paddingLeft="10dip" android:paddingRight="10dip"></ImageView>
+			</LinearLayout>
+			<com.mediaportal.ampdroid.quickactions.QuickActionView
+				android:layout_height="wrap_content" android:id="@+id/QuickActionViewItemActions"
+				android:layout_width="wrap_content" android:layout_gravity="center">
+			</com.mediaportal.ampdroid.quickactions.QuickActionView>
+
+			<TextView android:layout_width="wrap_content"
+				android:id="@+id/TextViewEpisodeRatingLabel" android:textStyle="bold"
+				android:textSize="18dip" android:text="@string/episode_rating"
+				android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			</TextView>
+			<RatingBar android:layout_height="wrap_content"
+				android:layout_marginTop="5dip" android:id="@+id/RatingBarEpisodeRating"
+				android:max="10" android:stepSize="1" android:layout_width="wrap_content"
+				android:numStars="10" android:isIndicator="true"
+				style="?android:attr/ratingBarStyleSmall">
+			</RatingBar>
+
+			<TextView android:layout_width="wrap_content"
+				android:id="@+id/TextViewEpisodeReleaseLabel" android:textStyle="bold"
+				android:textSize="18dip" android:text="@string/episode_firstaired"
+				android:layout_height="wrap_content" android:layout_marginTop="10dip"></TextView>
+			<TextView android:layout_width="fill_parent" android:text="@+id/TextView02"
+				android:layout_marginRight="10dip" android:id="@+id/TextViewEpisodeFirstAired"
+				android:layout_height="wrap_content"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:id="@+id/TextViewEpisodeRuntimeLabel" android:textStyle="bold"
+				android:layout_marginTop="10dip" android:textSize="18dip"
+				android:text="@string/series_runtime" android:layout_height="wrap_content"></TextView>
+			<TextView android:layout_width="fill_parent" android:text="@+id/TextView02"
+				android:layout_marginRight="10dip" android:id="@+id/TextViewEpisodeRuntime"
+				android:layout_height="wrap_content">
+			</TextView>
+			<TextView android:layout_height="wrap_content"
+				android:id="@+id/TextViewEpisodeOverview" android:layout_marginTop="20dip"
+				android:layout_width="fill_parent"></TextView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/episode_gueststars"
+				android:textStyle="bold" android:layout_marginBottom="10dip"
+				android:layout_marginTop="10dip" android:textSize="18dip"
+				android:id="@+id/TextViewEpisodeActorsLabel"></TextView>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/LinearLayoutActors"></LinearLayout>
+
+			<TextView android:layout_height="wrap_content" android:id="@+id/TextViewEpisodeActors"
+				android:layout_width="fill_parent" android:layout_marginRight="10dip"></TextView>
+
+
+		</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>

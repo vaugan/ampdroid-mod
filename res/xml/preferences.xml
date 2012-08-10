@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011 Benjamin Gmeiner.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Benjamin Gmeiner - Project Owner
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="@string/settings_categories_clients"
+		android:key="cat_clients" android:summary="@string/settings_categories_clients_desc">
+		<PreferenceScreen android:summary="@string/settings_clients_newclient_desc"
+			android:title="@string/settings_clients_newclient_title">
+			<intent android:action="android.intent.action.MAIN"
+				android:targetClass="com.mediaportal.ampdroid.activities.settings.ClientSettingsActivity"
+				android:targetPackage="com.mediaportal.ampdroid" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/settings_category_general"
+		android:key="cat_general">
+		<EditTextPreference android:defaultValue="aMPdroid" android:key="general_clientname" android:dialogTitle="@string/settings_general_clientname_title" android:summary="@string/settings_general_clientname_desc" android:title="@string/settings_general_clientname_title"></EditTextPreference><CheckBoxPreference android:summary="@string/settings_preference_vibrate_desc"
+			android:title="@string/settings_preference_vibrate_title"
+			android:key="general_vibrate"></CheckBoxPreference>
+		<CheckBoxPreference android:key="general_fullscreen"
+			android:summary="@string/settings_general_fullscreen_desc"
+			android:title="@string/settings_general_fullscreen" android:enabled="true"
+			android:defaultValue="true"></CheckBoxPreference><CheckBoxPreference android:key="auto_connect" android:title="@string/settings_general_autoconnect_title" android:summary="@string/settings_general_autoconnect_desc"></CheckBoxPreference>
+		<CheckBoxPreference android:title="@string/settings_general_autoreconnect_title" android:summary="@string/settings_general_autoreconnect_desc" android:key="auto_reconnect"></CheckBoxPreference>
+		<CheckBoxPreference android:key="auto_wol"
+			android:title="@string/settings_general_autowol_title"
+			android:summary="@string/settings_general_autowol_desc"></CheckBoxPreference>
+		<ListPreference android:summary="@string/settings_general_statusbar_hide_desc"
+			android:key="statusbar_autohide" android:title="@string/settings_general_statusbar_hide_title"
+			android:entries="@array/settings_general_statusbar_autohide_text"
+			android:entryValues="@array/settings_general_statusbar_autohide_values"
+			android:dialogTitle="@string/settings_general_statusbar_hide_dialog_title"></ListPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/settings_category_tvserver"
+		android:key="cat_tvserver">
+		<CheckBoxPreference android:summary="@string/settings_tvserver_showall_desc"
+			android:title="@string/settings_tvserver_showall_title" android:key="tvserver_showall"></CheckBoxPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/settings_category_media"
+		android:key="cat_media" android:enabled="true">
+		<EditTextPreference android:title="@string/settings_media_cachevalid_title"
+			android:key="media_cache_valid" android:summary="@string/settings_media_cachevalid_desc"
+			android:enabled="false"></EditTextPreference>
+		<CheckBoxPreference android:key="media_load_details"
+			android:summary="@string/settings_media_loaddetails_desc"
+			android:title="@string/settings_media_loaddetails_title"
+			android:enabled="false"></CheckBoxPreference>
+		<ListPreference android:key="media_default_view_series"
+			android:entries="@array/settings_media_defaultview_series_text"
+			android:entryValues="@array/settings_media_defaultview_series_values"
+			android:title="@string/settings_media_defaultview_series_title"
+			android:summary="@string/settings_media_defaultview_series_desc">
+		</ListPreference>
+		<ListPreference android:key="media_default_view_movies"
+			android:entries="@array/settings_media_defaultview_movies_text"
+			android:entryValues="@array/settings_media_defaultview_movies_values"
+			android:title="@string/settings_media_defaultview_movies_title"
+			android:summary="@string/settings_media_defaultview_movies_desc">
+		</ListPreference>
+		<ListPreference android:key="media_default_view_videos"
+			android:entries="@array/settings_media_defaultview_videos_text"
+			android:entryValues="@array/settings_media_defaultview_videos_values"
+			android:title="@string/settings_media_defaultview_videos_title"
+			android:summary="@string/settings_media_defaultview_videos_desc">
+		</ListPreference>
+		<ListPreference android:entries="@array/settings_media_defaultview_videoshares_text"
+			android:entryValues="@array/settings_media_defaultview_videoshares_values"
+			android:key="media_default_view_videoshares" android:title="@string/settings_media_defaultview_videoshares_title"
+			android:summary="@string/settings_media_defaultview_videoshares_desc">
+		</ListPreference>
+		<ListPreference android:entries="@array/settings_media_defaultview_musicshares_text"
+			android:entryValues="@array/settings_media_defaultview_musicshares_values"
+			android:key="media_default_view_musicshares" android:title="@string/settings_media_defaultview_musicshares_title"
+			android:summary="@string/settings_media_defaultview_musicshares_desc">
+		</ListPreference>
+		<ListPreference android:entries="@array/settings_media_defaultview_musicalbums_text"
+			android:entryValues="@array/settings_media_defaultview_musicalbums_values"
+			android:key="media_default_view_musicalbums" android:title="@string/settings_media_defaultview_musicalbums_title"
+			android:summary="@string/settings_media_defaultview_musicalbums_desc">
+		</ListPreference>
+		<ListPreference android:entries="@array/settings_media_defaultview_musicartists_text"
+			android:entryValues="@array/settings_media_defaultview_musicartists_values"
+			android:key="media_default_view_musicartists" android:title="@string/settings_media_defaultview_musicartists_title"
+			android:summary="@string/settings_media_defaultview_musicartists_desc">
+		</ListPreference>
+		<ListPreference android:entries="@array/settings_media_defaultview_musictracks_text"
+			android:entryValues="@array/settings_media_defaultview_musictracks_values"
+			android:key="media_default_view_musictracks" android:title="@string/settings_media_defaultview_musictracks_title"
+			android:summary="@string/settings_media_defaultview_musictracks_desc">
+		</ListPreference>
+		<ListPreference android:entries="@array/settings_media_preloaditems_text"
+			android:entryValues="@array/settings_media_preloaditems_values"
+			android:key="media_preload_items" android:dialogTitle="@string/settings_media_preload_items_title"
+			android:title="@string/settings_media_preload_items_title"
+			android:summary="@string/settings_media_preload_items_desc"
+			android:enabled="true"></ListPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:key="cat_streaming" android:title="@string/settings_category_streaming">
+		<ListPreference android:entries="@array/settings_streaming_startsettings_text" android:entryValues="@array/settings_streaming_startsettings_values" android:key="streaming_buffer" android:summary="@string/settings_streaming_buffering_desc" android:title="@string/settings_streaming_buffering_title" android:dialogTitle="@string/settings_streaming_buffering_title"></ListPreference>
+		<CheckBoxPreference android:key="streaming_use_external" android:title="@string/settings_streaming_useexternal_title" android:summary="@string/settings_streaming_useexternal_desc"></CheckBoxPreference>
+	</PreferenceCategory>
+</PreferenceScreen>

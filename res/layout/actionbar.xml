@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011 Benjamin Gmeiner.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Benjamin Gmeiner - Project Owner
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen"
+    android:layout_width="fill_parent"
+    android:orientation="horizontal" android:background="@drawable/actionbar_background" android:layout_height="55dip">
+    <RelativeLayout
+        android:id="@+id/actionbar_home"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        >
+        
+        <RelativeLayout
+            android:id="@+id/actionbar_home_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="45dip"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@color/actionbar_separator"
+            android:visibility="gone"
+            >
+            <!-- TODO: Make configurable. -->
+            
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dip"
+        android:textSize="16dip"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:singleLine="true"
+        android:layout_toRightOf="@+id/actionbar_home_btn"/>
+    <LinearLayout
+        android:id="@+id/actionbar_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/actionbar_separator"
+        >
+		<LinearLayout 
+			android:id="@+id/LinearLayout01" 
+			    android:layout_width="@dimen/actionbar_item_width"
+			    android:layout_height="@dimen/actionbar_item_height"
+			    android:background="@drawable/actionbar_btn"
+			    android:padding="10dip"
+			    android:layout_centerVertical="true"
+			    android:visibility="visible" android:clickable="false"
+			    >
+			<ProgressBar 
+			    android:id="@+id/actionbar_item_progress"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+			/>
+		</LinearLayout>
+    	<ImageButton
+    		android:id="@+id/actionbar_item_clients"
+    		android:layout_width="@dimen/actionbar_item_width"
+    		android:layout_height="@dimen/actionbar_item_height"
+    		android:background="@drawable/actionbar_btn"
+    		android:padding="5dip"
+    		android:layout_marginLeft="1px"
+    		android:layout_centerVertical="true"
+    		android:singleLine="true"
+    		android:src="@drawable/actionbar_remote" android:visibility="gone"/>
+    	<ImageButton
+    		android:id="@+id/actionbar_item_search"
+    		android:layout_width="@dimen/actionbar_item_width"
+    		android:layout_height="@dimen/actionbar_item_height"
+    		android:background="@drawable/actionbar_btn"
+    		android:padding="5dip"
+    		android:layout_marginLeft="1px"
+    		android:layout_centerVertical="true"
+    		android:singleLine="true"
+    		android:src="@drawable/actionbar_search" android:visibility="gone"/>
+    	<ImageButton android:layout_width="@dimen/actionbar_item_width" android:layout_height="@dimen/actionbar_item_height" android:visibility="visible" android:background="@drawable/actionbar_btn" android:layout_marginLeft="1px" android:padding="5dip" android:id="@+id/actionbar_item_logout" android:src="@drawable/actionbar_logout"></ImageButton>
+    
+</LinearLayout>
+<ImageButton android:id="@+id/actionbar_home_btn" android:padding="5dip" android:layout_marginRight="1px" android:layout_width="45dip" android:layout_height="45dip" android:background="@drawable/actionbar_btn" android:src="@drawable/actionbar_home" android:layout_alignParentLeft="true"></ImageButton>
+</RelativeLayout>

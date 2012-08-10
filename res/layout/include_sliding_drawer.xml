@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011 Benjamin Gmeiner.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Benjamin Gmeiner - Project Owner
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<SlidingDrawer android:id="@+id/SlidingDrawerStatus"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:handle="@+id/handle" android:content="@+id/content"
+		android:layout_gravity="bottom" android:layout_marginTop="48dip"
+		android:layout_marginBottom="60dip">
+		<LinearLayout android:id="@id/handle"
+			android:layout_width="fill_parent" android:layout_height="30dip"
+			android:background="@drawable/slidingdrawer">
+			<ImageView android:id="@+id/slidingbutton"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/slidingdrawer_button" android:layout_gravity="center"
+				android:layout_marginLeft="10dip" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center"
+				android:id="@+id/TextViewSliderSatusText" android:layout_marginLeft="20dip"
+				android:textColor="#FFFFFF" android:textStyle="bold"
+				android:clickable="false" android:editable="false" android:maxLines="1"
+				android:lines="1"></TextView>
+		</LinearLayout>
+
+		<include layout="@layout/include_sliding_drawer_content" />
+	</SlidingDrawer>
+</merge>
+

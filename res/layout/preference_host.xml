@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2011 Benjamin Gmeiner. All rights reserved. This program 
+	and the accompanying materials are made available under the terms of the 
+	GNU Public License v2.0 which accompanies this distribution, and is available 
+	at http://www.gnu.org/licenses/old-licenses/gpl-2.0.html Contributors: Benjamin 
+	Gmeiner - Project Owner -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:padding="10dip">
+		<Button android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:id="@+id/ButtonSwitchSimpleAdvanced"
+			android:text="@string/settings_clients_switchadvanced"></Button>
+
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/settings_clients_clientname" />
+		<EditText android:text="" android:id="@+id/pref_name"
+			android:maxLines="1" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:capitalize="words" />
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:orientation="vertical"
+			android:id="@+id/LinearLayoutSimpleHost">
+			<TextView android:id="@+id/textView1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/settings_clients_clienthost"></TextView>
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:id="@+id/pref_host"></EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/TextView01"
+				android:text="@string/settings_clients_clientmac"></TextView>
+			<EditText android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/pref_mac"
+				android:hint="@string/settings_clients_clientmac_hint"></EditText>
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientusername" />
+			<EditText android:text="" android:id="@+id/pref_user"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="false" android:imeOptions="actionNext"
+				android:inputType="text" />
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientpassword" />
+			<EditText android:id="@+id/pref_pass" android:text=""
+				android:inputType="textPassword" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:enabled="false"
+				android:imeOptions="actionNext" />
+			<CheckBox android:checked="false" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/pref_use_auth"
+				android:text="@string/settings_clients_clientuseauth" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:orientation="vertical"
+			android:id="@+id/LinearLayoutAdvancedHost">
+			<TextView android:id="@+id/textView1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/settings_clients_wifiremote"
+				android:textSize="16dip" android:textStyle="bold"
+				android:layout_marginBottom="10dip"></TextView>
+			<CheckBox android:layout_marginBottom="20dip"
+				android:id="@+id/pref_wifiremote_use_service" android:text="@string/settings_clients_enableservice"
+				android:checked="false" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:visibility="gone"></CheckBox>
+			<TextView android:id="@+id/textView1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/settings_clients_clienthost"></TextView>
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:id="@+id/pref_host_wifiremote_addr"
+				android:imeOptions="actionNext" android:inputType="text"></EditText>
+			<TextView android:id="@+id/textView1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/settings_clients_clientport"></TextView>
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:id="@+id/pref_host_wifiremote_port"
+				android:imeOptions="actionNext" android:inputType="number"></EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientmac"
+				android:id="@+id/TextView02"></TextView>
+			<EditText android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/pref_host_wifiremote_mac"
+				android:hint="@string/settings_clients_clientmac_hint"></EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientusername" />
+			<EditText android:text="" android:id="@+id/pref_wifiremote_user"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="false" android:imeOptions="actionNext"
+				android:inputType="text" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientpassword" />
+			<EditText android:id="@+id/pref_wifiremote_pass"
+				android:text="" android:inputType="textPassword"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="false" android:imeOptions="actionNext" />
+			<CheckBox android:checked="false" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/pref_wifiremote_use_auth"
+				android:text="@string/settings_clients_clientuseauth"
+				android:layout_marginBottom="20dip" />
+
+			<TextView android:id="@+id/textView1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/settings_clients_tv4home"
+				android:textStyle="bold" android:layout_marginBottom="10dip"
+				android:textSize="18dip"></TextView>
+			<CheckBox android:layout_marginBottom="20dip"
+				android:id="@+id/pref_tv4home_use_service" android:text="@string/settings_clients_enableservice"
+				android:checked="false" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:visibility="gone"></CheckBox>
+			<TextView android:id="@+id/textView1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/settings_clients_clienthost"></TextView>
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:id="@+id/pref_host_tv4home_addr"
+				android:imeOptions="actionNext" android:inputType="text"></EditText>
+			<TextView android:id="@+id/textView1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/settings_clients_clientport"></TextView>
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:id="@+id/pref_host_tv4home_port"
+				android:imeOptions="actionNext" android:inputType="number"></EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientmac"
+				android:id="@+id/TextView03"></TextView>
+			<EditText android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/pref_host_tv4home_mac"
+				android:hint="@string/settings_clients_clientmac_hint"></EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientusername" />
+			<EditText android:text="" android:id="@+id/pref_tv4home_user"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="false" android:imeOptions="actionNext"
+				android:inputType="text" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientpassword" />
+			<EditText android:id="@+id/pref_tv4home_pass" android:text=""
+				android:inputType="textPassword" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:enabled="false"
+				android:imeOptions="actionNext" />
+			<CheckBox android:checked="false" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/pref_tv4home_use_auth"
+				android:text="@string/settings_clients_clientuseauth"
+				android:layout_marginBottom="20dip" />
+
+			<TextView android:id="@+id/textView1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/settings_clients_gma"
+				android:textStyle="bold" android:layout_marginBottom="10dip"
+				android:textSize="18dip"></TextView>
+			<CheckBox android:id="@+id/pref_gma_use_service"
+				android:text="@string/settings_clients_enableservice"
+				android:checked="false" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:visibility="gone"></CheckBox>
+			<TextView android:id="@+id/textView1" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:text="@string/settings_clients_clienthost"></TextView>
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:id="@+id/pref_host_gma_addr"
+				android:imeOptions="actionNext" android:inputType="text"></EditText>
+			<TextView android:text="@string/settings_clients_clientport" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content"></TextView>
+			<EditText android:id="@+id/pref_host_gma_port" android:inputType="number" android:imeOptions="actionNext" android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<requestFocus></requestFocus>
+			</EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientmac"
+				android:id="@+id/TextView04"></TextView>
+			<EditText android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/pref_host_gma_mac"
+				android:hint="@string/settings_clients_clientmac_hint"></EditText>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientusername" />
+			<EditText android:text="" android:id="@+id/pref_gma_user"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:enabled="false" android:imeOptions="actionNext"
+				android:inputType="text" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/settings_clients_clientpassword" />
+			<EditText android:id="@+id/pref_gma_pass" android:text=""
+				android:inputType="textPassword" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:enabled="false"
+				android:imeOptions="actionNext" />
+			<CheckBox android:checked="false" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:id="@+id/pref_gma_use_auth"
+				android:text="@string/settings_clients_clientuseauth" />
+		</LinearLayout>
+
+
+
+	</LinearLayout>
+</ScrollView>

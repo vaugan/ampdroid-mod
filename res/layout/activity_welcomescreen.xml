@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011 Benjamin Gmeiner.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Benjamin Gmeiner - Project Owner
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/background" android:id="@+id/LinearLayoutLoadingBackground"
+	android:orientation="vertical">
+
+	<ImageView android:id="@+id/ImageView01"
+		android:layout_height="wrap_content" android:layout_gravity="top"
+		android:layout_width="fill_parent" android:src="@drawable/background_logo"
+		android:layout_marginTop="20dip"></ImageView>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/TextViewChooseClient"
+			android:text="@string/welcome_choose_client" android:textSize="16dip"
+			android:layout_gravity="center" android:layout_marginLeft="10dip"></TextView>
+		<Spinner android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip" android:id="@+id/SpinnerSelectClients"></Spinner>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<RadioButton android:id="@+id/RadioButton01"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/welcome_auto_connect" android:visibility="gone"></RadioButton>
+		<Button android:layout_height="wrap_content" android:id="@+id/ButtonConnect"
+			android:text="@string/welcome_connect" android:layout_width="fill_parent"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+			android:layout_marginTop="15dip"></Button>
+	</LinearLayout>
+	<ProgressBar android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center"
+		android:visibility="invisible" android:id="@+id/ProgressBarWelcomeScreen"></ProgressBar>
+	<LinearLayout android:layout_height="wrap_content"
+	android:layout_width="fill_parent" android:id="@+id/LinearLayoutAdMob"
+	android:layout_gravity="center"></LinearLayout>
+	<ImageView android:id="@+id/ImageView02" android:src="@drawable/background_text"
+		android:layout_height="fill_parent" android:layout_gravity="center"
+		android:layout_width="wrap_content"></ImageView>
+
+
+
+
+</LinearLayout>

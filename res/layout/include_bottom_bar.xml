@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 2011 Benjamin Gmeiner.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  
+  Contributors:
+      Benjamin Gmeiner - Project Owner
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout android:id="@+id/BottomBarLayout"
+		android:background="@drawable/bottom_bar_bg" android:layout_width="fill_parent"
+		android:layout_height="60dip" android:orientation="horizontal"
+		android:layout_gravity="bottom">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+			android:id="@+id/ButtonLeftLayout" android:layout_width="fill_parent">
+			<ImageButton android:layout_gravity="center"
+				android:layout_height="50dip" android:layout_width="50dip"
+				android:src="@drawable/button_volume" android:id="@+id/ImageButtonBottomVolume"></ImageButton>
+			<SeekBar android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center"
+				android:layout_marginLeft="10dip" android:layout_marginRight="20dip"
+				android:clickable="true" android:hapticFeedbackEnabled="true"
+				android:indeterminate="false" android:max="20" android:visibility="invisible" android:progress="15" android:id="@+id/SeekBarBottomVolume" android:thumb="@drawable/volume_progress_background"></SeekBar>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content"
+			android:gravity="center" android:id="@+id/ButtonMiddleLayout"
+			android:layout_width="wrap_content" android:layout_centerInParent="true">
+
+			<ImageButton android:layout_below="@+id/LinearLayout01"
+				android:src="@drawable/skipback_disabled" android:layout_height="50dip"
+				android:layout_gravity="center" android:layout_width="60dip" android:id="@+id/ImageButtonBottomRewind"></ImageButton>
+			<ImageButton android:layout_below="@+id/LinearLayout01"
+				android:src="@drawable/pause_disabled" android:layout_height="50dip"
+				android:layout_gravity="center" android:layout_width="60dip" android:id="@+id/ImageButtonBottomPause"></ImageButton>
+			<ImageButton android:layout_below="@+id/LinearLayout01"
+				android:src="@drawable/skipforward_disabled" android:layout_gravity="center"
+				android:layout_height="50dip" android:layout_width="60dip" android:id="@+id/ImageButtonBottomNext"></ImageButton>
+		</LinearLayout>
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/ButtonRightLayout"
+			android:layout_alignParentRight="true" android:layout_centerVertical="true">
+			<ImageButton android:layout_gravity="left"
+				android:layout_height="40dip"
+				android:layout_marginRight="5dip" android:id="@+id/ImageButtonBottomRemote" android:background="@drawable/home_mepo" android:layout_width="45dip"></ImageButton>
+		</LinearLayout>
+	</RelativeLayout>
+</merge>

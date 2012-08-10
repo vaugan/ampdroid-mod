@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2011 Benjamin Gmeiner. All rights reserved. This program 
+	and the accompanying materials are made available under the terms of the 
+	GNU Public License v2.0 which accompanies this distribution, and is available 
+	at http://www.gnu.org/licenses/old-licenses/gpl-2.0.html Contributors: Benjamin 
+	Gmeiner - Project Owner -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/background">
+	<com.mediaportal.ampdroid.activities.actionbar.ActionBar
+		android:id="@+id/actionbar" style="@style/ActionBar"
+		android:layout_gravity="top" />
+	<LinearLayout android:layout_width="fill_parent"
+		android:gravity="center" android:layout_marginTop="50dip"
+		android:layout_marginBottom="90dip" android:layout_gravity="top"
+		android:layout_height="fill_parent" android:id="@+id/BottomMarginLayout"
+		android:orientation="vertical">
+		<LinearLayout android:id="@+id/LinearLayout01"
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:layout_marginTop="5dip">
+			<Button android:layout_height="wrap_content" android:id="@+id/ButtonPrevDay"
+				android:text="@string/button_prev" android:layout_width="0dip"
+				android:layout_weight="1"></Button>
+			<Spinner android:layout_height="wrap_content" android:id="@+id/SpinnerDay"
+				android:layout_width="0dip" android:layout_weight="4"></Spinner>
+			<Button android:layout_height="wrap_content" android:id="@+id/ButtonNextDay"
+				android:text="@string/button_next" android:layout_width="0dip"
+				android:layout_weight="1"></Button>
+		</LinearLayout>
+		<FrameLayout android:layout_width="fill_parent"
+			android:id="@+id/FrameLayout02" android:layout_height="30dip"
+			android:background="@drawable/bottom_bar_bg">
+			<TextView android:layout_height="wrap_content" android:id="@+id/TextViewChannelName"
+				android:layout_gravity="center" android:gravity="center"
+				android:textStyle="bold" android:layout_width="wrap_content"
+				android:textSize="20dip" android:text="ATV"></TextView>
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_marginRight="10dip"
+				android:id="@+id/TextViewCurrentDate" android:text="Today"
+				android:layout_gravity="center_vertical" android:gravity="right"></TextView>
+		</FrameLayout>
+		<ListView android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:id="@+id/ListViewChannels"
+			android:layout_marginTop="5dip" android:cacheColorHint="#00000000">
+		</ListView>
+	</LinearLayout>
+	<include layout="@layout/include_sliding_drawer" />
+	<include layout="@layout/include_bottom_bar"></include>
+</FrameLayout>

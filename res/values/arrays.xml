@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2011 Benjamin Gmeiner. All rights reserved. This program 
+	and the accompanying materials are made available under the terms of the 
+	GNU Public License v2.0 which accompanies this distribution, and is available 
+	at http://www.gnu.org/licenses/old-licenses/gpl-2.0.html Contributors: Benjamin 
+	Gmeiner - Project Owner -->
+<resources>
+	<string-array name="settings_media_preloaditems_values">
+		<item>0</item>
+		<item>20</item>
+		<item>50</item>
+		<item>100</item>
+		<item>200</item>
+		<item>500</item>
+	</string-array>
+
+	<string-array name="settings_media_preloaditems_text">
+		<item>Load all</item>
+		<item>20</item>
+		<item>50</item>
+		<item>100</item>
+		<item>200</item>
+		<item>500</item>
+	</string-array>
+
+	<string-array name="settings_general_statusbar_autohide_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_series_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_movies_values">
+		<item>0</item>
+		<item>1</item>
+		<item>3</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_videos_values">
+		<item>0</item>
+		<item>1</item>
+		<item>3</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_videoshares_values">
+		<item>0</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_musicshares_values">
+		<item>0</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_musicartists_values">
+		<item>0</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_musicalbums_values">
+		<item>0</item>
+		<item>3</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_musictracks_values">
+		<item>0</item>
+	</string-array>
+
+	<string-array name="settings_general_statusbar_autohide_text">
+		<item>Always Show</item>
+		<item>Always Hide</item>
+		<item>Show when connected</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_series_text">
+		<item>Text</item>
+		<item>Poster</item>
+		<item>Banner</item>
+		<item>Thumb</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_movies_text">
+		<item>Text</item>
+		<item>Poster</item>
+		<item>Thumb</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_videos_text">
+		<item>Text</item>
+		<item>Poster</item>
+		<item>Thumb</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_videoshares_text">
+		<item>Text</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_musicshares_text">
+		<item>Text</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_musicartists_text">
+		<item>Text</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_musicalbums_text">
+		<item>Text</item>
+		<item>Thumb</item>
+	</string-array>
+
+	<string-array name="settings_media_defaultview_musictracks_text">
+		<item>Text</item>
+	</string-array>
+
+	<string-array name="settings_streaming_startsettings_values">
+		<item>0</item>
+		<item>auto</item>
+		<item>manual</item>
+		<item>5</item>
+		<item>10</item>
+		<item>15</item>
+		<item>20</item>
+		<item>max</item>
+	</string-array>
+
+	<string-array name="settings_streaming_startsettings_text">
+		<item>Start immediately</item>
+		<item>Auto-Mode</item>
+		<item>Large Buffer</item>
+		<item>Standard Buffer</item>
+		<item>Small Buffer</item>
+	</string-array>
+	<string-array name="settings_streaming_qualitysettings_values">
+		<item>auto</item>
+		<item>manual</item>
+		<item>mobile-slow</item>
+		<item>mobile-default</item>
+		<item>mobile-fast</item>
+		<item>wifi-slow</item>
+		<item>wifi-default</item>
+		<item>wifi-ast</item>
+	</string-array>
+
+	<string-array name="settings_streaming_qualitysettings_text">
+		<item>Automatically</item>
+		<item>Manually</item>
+		<item>Mobile Data Slow</item>
+		<item>Mobile Data Default</item>
+		<item>Mobile Data Fast</item>
+		<item>Wifi Slow</item>
+		<item>Wifi Default</item>
+		<item>Wifi Fast</item>
+	</string-array>
+</resources>

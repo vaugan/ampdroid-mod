@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) 2011 Benjamin Gmeiner. All rights reserved. This program 
+	and the accompanying materials are made available under the terms of the 
+	GNU Public License v2.0 which accompanies this distribution, and is available 
+	at http://www.gnu.org/licenses/old-licenses/gpl-2.0.html Contributors: Benjamin 
+	Gmeiner - Project Owner -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content" android:layout_width="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout android:layout_height="50dip"
+		android:layout_width="fill_parent" android:id="@+id/LinearLayout02"
+		android:background="@drawable/bottom_bar_bg">
+		<TextView android:layout_height="wrap_content" android:text="[ Movie Name ]"
+			android:id="@+id/TextViewMovieName" android:layout_gravity="center"
+			android:textStyle="bold" android:gravity="center"
+			android:layout_width="fill_parent" android:textSize="20dip"></TextView>
+	</LinearLayout>
+	<ScrollView android:id="@+id/ScrollViewRoot"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:padding="5dip">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:orientation="vertical">
+			<LinearLayout android:layout_height="wrap_content"
+				android:id="@+id/LinearLayoutMovieHeader" android:layout_width="fill_parent"
+				android:layout_marginBottom="5dip">
+				<LinearLayout android:id="@+id/LinearLayout03"
+					android:layout_height="wrap_content" android:layout_width="0dip"
+					android:layout_weight="3">
+					<ImageView android:scaleType="fitCenter"
+						android:minWidth="100dip" android:minHeight="125dip"
+						android:layout_height="wrap_content" android:background="@drawable/rounded_image_background"
+						android:layout_width="wrap_content" android:id="@+id/ImageViewMoviePoster"
+						android:layout_marginTop="10dip" android:layout_marginLeft="10dip"></ImageView>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/LinearLayout01"
+					android:layout_height="wrap_content" android:layout_marginTop="10dip"
+					android:orientation="vertical" android:layout_width="0dip"
+					android:layout_weight="3">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="@string/movie_release"
+						android:textStyle="bold" android:textSize="18dip"
+						android:id="@+id/TextViewMovieReleaseLabel">
+					</TextView>
+
+					<TextView android:layout_height="wrap_content"
+						android:id="@+id/TextViewMovieRelease" android:layout_width="fill_parent"
+						android:layout_marginRight="10dip">
+					</TextView>
+
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textStyle="bold"
+						android:textSize="18dip" android:text="@string/movie_runtime"
+						android:layout_marginTop="10dip" android:id="@+id/TextViewMovieRuntimeLabel">
+					</TextView>
+
+					<TextView android:layout_height="wrap_content"
+						android:id="@+id/TextViewMovieRuntime" android:layout_width="fill_parent"
+						android:layout_marginRight="10dip">
+					</TextView>
+
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:textStyle="bold"
+						android:textSize="18dip" android:text="@string/movie_certification"
+						android:layout_marginTop="10dip" android:id="@+id/TextViewMovieCertificationLabel">
+					</TextView>
+
+					<TextView android:id="@+id/TextViewMovieCertification"
+						android:layout_height="wrap_content" android:layout_width="fill_parent"
+						android:layout_marginRight="10dip">
+					</TextView>
+				</LinearLayout>
+			</LinearLayout>
+
+			<com.mediaportal.ampdroid.quickactions.QuickActionView
+				android:layout_height="wrap_content" android:id="@+id/QuickActionViewItemActions"
+				android:layout_width="fill_parent"></com.mediaportal.ampdroid.quickactions.QuickActionView>
+
+
+			<TextView android:layout_width="wrap_content"
+				android:id="@+id/TextViewMovieRatingLabel" android:textStyle="bold"
+				android:textSize="18dip" android:text="@string/episode_rating"
+				android:layout_height="wrap_content" android:layout_marginTop="10dip">
+			</TextView>
+			<RatingBar android:layout_height="wrap_content"
+				android:layout_marginTop="5dip" android:id="@+id/RatingBarMovieRating"
+				android:max="10" android:stepSize="1" android:layout_width="wrap_content"
+				android:numStars="10" android:isIndicator="true"
+				style="?android:attr/ratingBarStyleSmall">
+			</RatingBar>
+
+			<com.mediaportal.ampdroid.lists.AnimatedSizingGallery
+				android:layout_width="fill_parent" android:id="@+id/GalleryAllMoviePosters"
+				android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+				android:layout_height="0dip" android:layout_weight="2" />
+
+			<TextView android:layout_height="wrap_content" android:id="@+id/TextViewMovieOverview"
+				android:layout_marginTop="10dip" android:layout_width="fill_parent">
+			</TextView>
+
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="@string/movie_actors"
+				android:textStyle="bold" android:layout_marginBottom="10dip"
+				android:layout_marginTop="10dip" android:textSize="18dip"
+				android:id="@+id/TextViewMovieActorsLabel">
+			</TextView>
+
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:id="@+id/LinearLayoutActors">
+			</LinearLayout>
+
+			<TextView android:layout_height="wrap_content" android:id="@+id/TextViewMovieActors"
+				android:layout_width="fill_parent">
+			</TextView>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
